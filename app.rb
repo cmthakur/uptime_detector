@@ -12,6 +12,9 @@ module SiteUp
       apps = UpTimeRobot.new(ENV['api_key']).watch
       haml :index, locals: { apps: apps }
     end
+
+    # If you are not using shogun gem, use run!
+    # run!
   end
 end
 
