@@ -1,0 +1,10 @@
+%table
+  %th Name
+  %th Status
+  %tbody
+    - locals[:apps].each do |app|
+      %tr
+        %td
+          = app[:name]
+        %td
+          = app[:status]
